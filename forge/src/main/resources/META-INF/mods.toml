@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "GNU LGPL 3.0"
+
+[[mods]]
+modId = "subtleskybox"
+version = "${version}"
+displayName = "Subtle Skybox"
+authors = "jaskarth"
+description = '''
+Subtle changes to the skybox while keeping it vanilla-style.
+'''
+logoFile = "assets/subtleskybox/icon.png"
+
+[[dependencies.subtleskybox]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.subtleskybox]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "CLIENT"

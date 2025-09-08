@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "subtleskybox",
+  "version": "${version}",
+  "name": "Subtle Skybox",
+  "description": "Subtle changes to the skybox while keeping it vanilla-style.",
+  "authors": [
+    "jaskarth"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/subtleskybox/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.jaskarth.subtleskybox.fabric.SubtleSkyboxFabric"
+    ]
+  },
+  "mixins": [
+    "subtleskybox.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  }
+}
