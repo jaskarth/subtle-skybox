@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
+loaderVersion = "[2,)"
 #issueTrackerURL = ""
 license = "GNU LGPL 3.0"
 
@@ -13,16 +13,19 @@ Subtle changes to the skybox while keeping it vanilla-style.
 '''
 logoFile = "assets/subtleskybox/icon.png"
 
+[[mixins]]
+config = "subtleskybox.mixins.json"
+
 [[dependencies.subtleskybox]]
-modId = "forge"
+modId = "neoforge"
 mandatory = true
-versionRange = "[47,)"
+versionRange = "[21,)"
 ordering = "NONE"
 side = "CLIENT"
 
 [[dependencies.subtleskybox]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.20.1,)"
+versionRange = "[1.21.1,)"
 ordering = "NONE"
 side = "CLIENT"
