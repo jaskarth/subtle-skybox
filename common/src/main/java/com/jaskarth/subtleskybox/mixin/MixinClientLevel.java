@@ -25,6 +25,9 @@ public abstract class MixinClientLevel extends Level {
 
     @Inject(method = "getSkyColor", at = @At("RETURN"), cancellable = true)
     private void subtleSkybox$ChangeColor(Vec3 vec3, float f, CallbackInfoReturnable<Vec3> cir) {
+        if (this.dimension() != OVERWORLD) {
+            return;
+        }
         Vec3 color = cir.getReturnValue();
 
         double red = color.x;
